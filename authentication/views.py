@@ -60,3 +60,5 @@ class GoogleCallbackView(APIView):
         access_token = requests.post(settings.GOOGLE_TOKEN_URL, data=data).json()['access_token']
         
         return Response({'token': access_token})
+    
+    
